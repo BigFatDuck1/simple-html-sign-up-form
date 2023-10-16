@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    font-family: "Gabarito", Helvetica, sans-serif;
+}
+
+body {
+    background-color: grey;
+    /* Source: https://www.hongkiat.com/blog/beautiful-minimalist-desktop-wallpapers/ */
+    background-image: url("wallpaper2.jpg");
+    /* background-size: contain; */
+    background-size: cover;
+}
+
+.big_container {
+    display: flex;
+    
+}
+
+.left_sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.782);
+    justify-content: center;
+    align-items: center;
+    width: max(50vw, 100px);
+    margin-top: 25vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo {
+    width: auto;
+    height: 5rem;
+    
+}
+
+.logo_text {
+    font-size: 3rem;
+    color: #FFBE2D;
+}
