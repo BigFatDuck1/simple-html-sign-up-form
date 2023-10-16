@@ -82,6 +82,16 @@ form {
     grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 400px) {
+    .form_inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .right_panel {
+        height: 120vh;
+    }
+}
+
 .form_item {
     padding-left: 30px;
     padding-right: 30px;
