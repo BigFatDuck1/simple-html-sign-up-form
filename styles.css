@@ -141,3 +141,28 @@ input:not(:placeholder-shown):not(:valid) {
     margin-bottom: 15px;
     font-size: 0.8rem;
 }
+
+button[type="submit"] {
+    appearance: none;
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    background-color: rgb(255, 139, 44);
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    
+    
+}
+
+button[type="submit"]:hover {
+    color: #241c15;
+    background-color: #d9d7cd;
+}
