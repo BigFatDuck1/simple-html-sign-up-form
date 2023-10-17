@@ -109,13 +109,22 @@ input[type="tel"],
 input[type="password"] {
     appearance: none;
     /* Todo: styles for input box */
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 3px;
     background-color: transparent;
     border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 2px;
+
 }
 
 input:focus {
-    background-color: red;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid cyan;
 }
+
 
 .sign-up-section {
     padding-top: 30px;
