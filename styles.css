@@ -125,6 +125,12 @@ input:focus {
     border-bottom: 1px solid cyan;
 }
 
+input:not(:placeholder-shown):not(:valid) {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
 
 .sign-up-section {
     padding-top: 30px;
