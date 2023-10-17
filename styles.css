@@ -105,11 +105,16 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+input[type="password"] {
     appearance: none;
     /* Todo: styles for input box */
     background-color: transparent;
     border: none;
+}
+
+input:focus {
+    background-color: red;
 }
 
 .sign-up-section {
