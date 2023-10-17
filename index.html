@@ -18,9 +18,8 @@
             <form action="" method="get">
                 <div class="intro_text">
                     <p>
-                        This is not a real online service!
-                        You know you need something like this in your life
-                        to help you realize your deepest dreams.
+                        This is just placeholder text. I am serious. This is not a real signup page.
+                        If you are still reading this you are wasting your time.
                         Sign up now to get started!
                     </p>
                     <br />
@@ -55,12 +54,12 @@
 
                         <div class="form_item">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" class="password_boxes" minlength="8">
                         </div>
 
                         <div class="form_item">
                             <label for="confirm_password">Confirm password</label>
-                            <input type="password" id="confirm_password" name="confirm_password">
+                            <input type="password" id="confirm_password" name="confirm_password" class="password_boxes">
                         </div>
 
                         <div class="form_item sign-up-section">
@@ -78,17 +77,20 @@
     </div>
 
 <script>
-    let password_var = document.getElementById("password");
-    let confirm_password_var = document.getElementById("confirm_password");
+    
+    window.addEventListener("keyup", (event) => {
 
-    window.addEventListener("keydown", (event) => {
+        let password_var = document.getElementById("password");
+        let confirm_password_var = document.getElementById("confirm_password");
         //console.log(password_var.value);
         if (password_var.value != confirm_password_var.value) {
             console.log("Applied")
             confirm_password_var.classList.add("password_red");
+            confirm_password_var.classList.remove("password_green");
         }
         else {
             confirm_password_var.classList.remove("password_red");
+            confirm_password_var.classList.add("password_green");
         }
     })
 

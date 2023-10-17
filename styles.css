@@ -73,7 +73,9 @@ form {
 .cta {
     margin: 10px 10px 10px 30px;
     padding-bottom: 20px;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#5f4610;
 }
 
 .form_inputs {
@@ -105,8 +107,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-input[type="password"] {
+input[type="tel"] {
     appearance: none;
     /* Todo: styles for input box */
     box-sizing: border-box;
@@ -167,9 +168,32 @@ button[type="submit"]:hover {
     background-color: #d9d7cd;
 }
 
+/* Default style for password input fields */
+.password_boxes {
+    appearance: none;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 3px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 2px;
+}
+
+#password:invalid {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
 /* Add this class if passwords do not match */
 .password_red {
     border: none;
     outline: none;
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid red;
+}
+.password_green {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid green;
 }
