@@ -197,3 +197,14 @@ button[type="submit"]:hover {
     outline: none;
     border-bottom: 3px solid green;
 }
+.password_red:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid red;
+}
+.password_green:focus,
+#password:valid:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid green;
+}
