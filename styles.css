@@ -60,6 +60,7 @@ form {
     padding-top: 5vh;
     padding-left: 5vw;
     padding-right: 10vw;
+    padding-bottom: 30px;
     font-size: 1.2rem;
 
 }
@@ -70,7 +71,8 @@ form {
 }
 
 .cta {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 30px;
+    padding-bottom: 20px;
     font-size: 1.2rem;
 }
 
@@ -104,7 +106,18 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
+    appearance: none;
     /* Todo: styles for input box */
     background-color: transparent;
     border: none;
+}
+
+.sign-up-section {
+    padding-top: 30px;
+}
+
+.already-account {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
 }
